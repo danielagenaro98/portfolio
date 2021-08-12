@@ -1,0 +1,11 @@
+html {
+  --bg-color: #191a1d;
+  --white: #FFF;
+  --grey: #ABABAB;
+
+  font-size: 10px;
+}
+
+.title {
+  color: var(--bg-color);
+}
