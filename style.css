@@ -157,34 +157,31 @@ html {
 }
 
 #services-section {
+  display: flex;
+  justify-content: center;
   background: var(--white);
   color: var(--bg-color);
   margin: 15rem 0;
 }
 
-#services-section .main-container-services {
-  display: flex;
-  justify-content: center;
-}
-
-#services-section .main-container-services .slides {
+#services-section .slides {
   display: flex;
   overflow: auto; 
   scroll-snap-type: x mandatory;
   width: 60%;
 }
 
-#services-section .main-container-services .slides::-webkit-scrollbar {
+#services-section .slides::-webkit-scrollbar {
   display: none;
 } 
 
-#services-section .main-container-services .slides .icon {
+#services-section .slides .icon {
   font-family: 'Material Icons';
   font-size: 10rem;
   color: var(--primary-color);
 }
 
-#services-section .main-container-services .slides .slide {
+#services-section .slides .slide {
   display: flex;
   flex-direction: column;
   align-items: center;
