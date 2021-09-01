@@ -155,3 +155,49 @@ html {
   top: 10%;
   left: 10%;
 }
+
+#services-section {
+  display: flex;
+  justify-content: center;
+  background: var(--white);
+  color: var(--bg-color);
+  margin: 15rem 0;
+}
+
+#services-section .slides {
+  display: flex;
+  overflow: auto; 
+  scroll-snap-type: x mandatory;
+  width: 60%;
+}
+
+#services-section .slides::-webkit-scrollbar {
+  display: none;
+} 
+
+#services-section .slides .icon {
+  font-family: 'Material Icons';
+  font-size: 10rem;
+  color: var(--primary-color);
+}
+
+#services-section .slides .slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.3%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+#services-section .slides .slide .title {
+  font-size: 2rem;
+  color: var(--primary-color);
+  padding: 1rem 0;
+}
+
+#services-section .slides .slide .information {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem 4rem;
+}
